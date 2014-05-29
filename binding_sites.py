@@ -138,7 +138,7 @@ if __name__ == "__main__":
     parser.add_argument("-g", "--genes", nargs="+", type=str,
 	    default=["exon", "five_prime_UTR", "intron", "three_prime_UTR"],
 	    help="List of genes parts to check, i.e. exon intron ...")
-    parser.add_argument("-c", "--chromosome", action="store", default="4",
+    parser.add_argument("-c", "--chromosome", action="store", default="all",
 	    help="Chromosome # or 'all'")
     parser.add_argument("-v", "--version", action="store", default="r5.57",
 	    help="Release version, i.e. 'r5.57'.")
