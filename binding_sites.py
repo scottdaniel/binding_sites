@@ -132,9 +132,9 @@ if __name__ == "__main__":
     parser.add_argument("-p", "--path", action="store", default=".",
 	    help="Path to the files (default is '.').")
     parser.add_argument("-o", "--output", action="store", default=None,
-	    help="Name for the outputfile.")
+	    help="Name for the outputfile, default is [species]-bs_finder_results.csv")
     parser.add_argument("-s", "--species", action="store", default="dmel",
-	    help="Species to use examine.")
+	    help="Species to examine.")
     parser.add_argument("-g", "--genes", nargs="+", type=str,
 	    default=["exon", "five_prime_UTR", "intron", "three_prime_UTR"],
 	    help="List of genes parts to check, i.e. exon intron ...")
